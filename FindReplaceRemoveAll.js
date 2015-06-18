@@ -6,14 +6,14 @@
 var teams = ["Dodgers","Giants","Pirates","Rangers","Giants","Nationals"];
 
 // replace
-while (teams.indexOf("Giants") != -1) {
+for (teams; -1 != teams.indexOf("Giants");) {
     teams.splice(teams.indexOf("Giants"),1,"X");
 }
 
 console.log(teams);
 
 // delete
-while(teams.indexOf("X") != -1) {
+for (teams; -1 != teams.indexOf("X");) {
     teams.splice(teams.indexOf("X"),1);
 }
 console.log(teams);
