@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Directive Scope Inheritance</title>
+    <title>Directive Scope Inheritance (& templating)</title>
     <script src="../angular.js"></script>
 
 </head>
@@ -10,11 +10,16 @@
 <div ng-app="directiveScopeInheritanceApp">
     <div ng-controller="MainCtrl">
         <my-directive>
-            <p>{{template}}</p>
-            <p>Scope from {{source}}</p>
-            <p>Overwritten? {{overwrite}}</p>
+            //insert templated markup here
         </my-directive>
     </div>
+    <script type="text/ng-template" id="my-directive.html">
+        <div>
+            <h2>Template</h2>
+            <p>Scope from {{source}}</p>
+            <p>Overwritten?? {{overwrite}}</p>
+        </div>
+    </script>
 </div>
 <script src="app.js"></script>
 </body>

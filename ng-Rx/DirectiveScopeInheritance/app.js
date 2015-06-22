@@ -11,6 +11,8 @@ angular.module('directiveScopeInheritanceApp', [])
 .directive('myDirective', function(){
     return{
         restrict: 'E',
+        replace: true,
+        templateUrl: 'my-directive.html',
         link: function(scope){
             scope.overwrite = !!scope.source;
             scope.source = 'link func';
