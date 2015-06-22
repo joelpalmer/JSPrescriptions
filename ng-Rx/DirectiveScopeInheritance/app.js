@@ -6,6 +6,7 @@ angular.module('directiveScopeInheritanceApp', [])
 .controller('MainCtrl', function ($scope){
         $scope.overwrite = false;
         $scope.source = 'parent ctrl';
+        $scope.template = 'No Template';
     })
 .directive('myDirective', function(){
     return{
