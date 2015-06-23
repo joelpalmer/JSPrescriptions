@@ -4,6 +4,7 @@
 angular.module('ObjInspectorApp', [])
 .controller('ObjInspectorCtrl', function($scope){
     $scope.player = {
+        team: 'Dodgers',
         number: 31,
         name: {
             firstName: 'Joc',
