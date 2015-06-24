@@ -14,7 +14,7 @@ function moveElement(){
 window.requestAnimationFrame(moveElement);
 console.log('Last line of this part');
 
-//load image (now expecting a promise
+//load image (now expecting a promise)
 loadImage('dodgers.png').then(function(img){
     document.body.appendChild(img);
 }).catch(function(e){
@@ -24,12 +24,12 @@ loadImage('dodgers.png').then(function(img){
 
 function loadImage(url){
     var promise = new Promise(
-        function keeper(resolve, reject){
+        function keeper(fulfill, reject){
             var img = new Image();
             img.src = url;
 
             img.onload = function(){
-                resolve(img);
+                fulfill(img);
             };
 
             img.onerror = function(e){
