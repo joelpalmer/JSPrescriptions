@@ -24,12 +24,12 @@ loadImage('dodgers.png').then(function(img){
 
 function loadImage(url){
     var promise = new Promise(
-        function keeper(fulfill, reject){
+        function keeper(resolve, reject){
             var img = new Image();
             img.src = url;
 
             img.onload = function(){
-                fulfill(img);
+                resolve(img);
             };
 
             img.onerror = function(e){
