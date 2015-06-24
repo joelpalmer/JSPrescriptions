@@ -1,0 +1,9 @@
+{
+  "team": "Dodgers",
+  "number": 31,
+  "name": {
+    "firstName": "Joc",
+    "lastName": "Pederson"
+  },
+  "nickName": "Yungjoc"
+}
