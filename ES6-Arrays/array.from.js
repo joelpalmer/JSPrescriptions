@@ -10,11 +10,10 @@ var args = function(){
     return Array.from(arguments);
 };
 if (!is_chrome) {
-    console.log(args(31, "Joc", "Pederson"));
+    console.log(args(31, "Joc", "Pederson", "CF"));
 }
 
 //create an array from a string -- toCharArray()
-
 String.prototype.toCharArray = function(){
     return Array.from(this);
 };
