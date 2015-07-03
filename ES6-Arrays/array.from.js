@@ -10,3 +10,11 @@ var args = function(){
 
 console.log(args(31, "Joc", "Pederson"));
 
+//create an array from a string -- toCharArray()
+
+String.prototype.toCharArray = function(){
+    return Array.from(this);
+};
+
+var text = "Dodgers";
+console.log(text.toCharArray()); // Array [ "D", "o", "d", "g", "e", "r", "s" ]
