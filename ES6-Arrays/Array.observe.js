@@ -11,4 +11,4 @@ if (is_chrome) {
     });
 }
 array[1] = 'Dodgers Rule!';
-// [{type: 'update', object: <arr>, name: '1', oldValue: 'b'}]
+//name: "1"object: Array[3]oldValue: "Dodgers" type: "update"__proto__: Objectlength: 1
