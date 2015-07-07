@@ -27,5 +27,3 @@ console.log(nums.findIndex(function (el, idx, array){
 }));
 
 
-
-
