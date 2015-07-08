@@ -11,8 +11,8 @@ teamArray[2] = ['Twins','Indians'];
 teamArray[3] = ['Mariners','Angels'];
 
 var flatten = function(array){
-  return array.reduce(function(p,n){
-      return p.concat(n);
+  return array.reduce(function(p,c){
+      return p.concat(c);
   })  ;
 };
 
