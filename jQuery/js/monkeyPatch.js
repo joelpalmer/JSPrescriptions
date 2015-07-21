@@ -4,6 +4,7 @@
 $(document).ready(function(){
     jQuery.fn.toYell = function(){
         document.getElementById("teamDiv").textContent =  document.getElementById("teamDiv").textContent.toUpperCase();
+
     };
     $('button').on('click', function(){
         $('#teamDiv').toYell();
